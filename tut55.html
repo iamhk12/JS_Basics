@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LOOPS</title>
+    <style>
+        * {
+            background-color: #303030;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        This is about Loops.
+    </div>
+
+    <script>
+        console.log("This is tutorial 55. ");
+        for (let i = 0; i < 3; i++) {
+            console.log(i + " ");
+        }
+
+        let friends = ["Rohan", "Sandeep", "Himanshu", "Pooja", "HELLO"]
+        // for (let index = 0; index < friends.length; index++) {
+        //     const frnd = friends[index];
+        //     console.log("Hello, " + friends[index]);
+        // }
+
+        // friends.forEach(function f(element){
+        //     console.log("Hello, " + element + " to Modern javascript");
+        // });
+
+        for (element of friends) {
+            console.log("Hello, " + element + " to Modern javascript Again");
+        }
+
+        let employee = {
+            name: "HK",
+            salary: 100,
+            channel: "Code with HK"
+        }
+
+        //Use this loop to iterate over objects in Javascript
+        for (key in employee) {
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        // while loops in JS
+        let i = 0;
+
+        while (i < 4) {
+            console.log(`${i} is less than 4`);
+            i++;
+        }
+
+        //do while loops in JS
+        let j = 34;
+        do {
+            console.log(`${j} is less than 4 and we are inside do while loop`);
+            j++;
+        }
+        while (j < 4)
+
+    </script>
+</body>
+
+</html>}

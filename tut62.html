@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Json tutorial</title>
+    <style>
+        html {
+            background-color: #303030;
+            color: #ffffff;
+            font-size: 23px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">This is my container</div>
+
+
+    <script>
+        let jsonObj = {
+            name: "HK",
+            channel: "CodewithHK",
+            friend:"NR",
+            food:"Vadapav"
+        };
+
+        console.log(jsonObj);
+
+        let myJson = JSON.stringify(jsonObj);
+        console.log(myJson);
+
+        myJson = myJson.replace('Vadapav','Pizza')
+        console.log(myJson);
+
+        newJsonObj = JSON.parse(myJson);
+        console.log(newJsonObj);
+
+        let arr = [1,2,3,4,5];
+        let x = JSON.stringify(arr);
+        console.log(x);
+    </script>
+    
+</body>
+</html>

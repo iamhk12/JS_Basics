@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Interaction using alert,confirm and prompt</title>
+</head>
+
+<body>
+    <div class="container">
+        This is a page
+    </div>
+
+    <script>
+        //Alert  - Does not return anything
+        // alert("This is a message")
+
+        //Prompt
+        // let name = prompt("What is your name ?","Guest");
+        // console.log(name);
+
+        //Confirm
+        let deletepost = confirm("Do you really want to delete this post ?");
+        if (deletepost) {
+            console.log("The post has been deleted successfully");
+        }
+        else {
+            console.log("The post has not been deleted");
+        }
+        console.log(deletepost);
+
+    </script>
+
+</body>
+
+</html>

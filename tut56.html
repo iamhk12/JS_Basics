@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manipulating DOM</title>
+    <style>
+        *
+        {
+            color: white;
+            background-color: #303030;
+        }
+    </style>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More about us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Another Container
+    </div>
+
+
+    <script>
+        let main= document.getElementById('main');
+        console.log(main); 
+
+        let nav = document.getElementById('nav');
+        console.log(nav);
+
+        console.log(nav.innerHTML);
+    
+        let containers = document.getElementsByClassName("container");
+        console.log(containers);
+
+        // let sel = document.querySelector("#nav>li");
+        // console.log("Selector returns ",sel);
+        let sel = document.querySelectorAll("#nav>li");
+        console.log("Selector returns ",sel);
+    </script>
+
+</body>
+</html>

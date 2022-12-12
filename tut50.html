@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | String functions</title>
+</head>
+
+<body>
+    <div class="container"></div>
+
+
+
+    <script>
+        var str = "This is a string";
+        console.log(str);
+
+        //Index start from 0.
+
+        //first occurence of is
+        var position = str.indexOf("is");
+        console.log(position);
+
+        //last occurence of is
+        position = str.lastIndexOf("is");
+        console.log(position);
+
+        //Substring from a string
+        // 1-5 str element will be printed
+        // var substr = str.slice(1,6);   
+
+        // var substr = str.substring(1,6);
+        var substr1 = str.substr(1,8);
+        console.log(substr1);
+
+        var replaced = str.replace('string','HK');
+        console.log(str);
+        console.log(replaced);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newstr = str.concat('New string');
+        console.log(newstr);
+        
+        var strwhitespaces = "         This contains              whitespaces           ";
+        console.log(strwhitespaces);
+        console.log(strwhitespaces.trim());
+
+        var char2 = str.charAt(2);
+        console.log(char2);
+
+        var char2 = str.charCodeAt(2); //Not important
+        console.log(char2);
+
+        console.log(str[0]);
+        console.log(str[2]);
+    </script>
+</body>
+
+</html>
